@@ -1,0 +1,104 @@
+@import '../../style/app';	//contains all the hex color codes, mixins, and page wide less code
+
+
+.newsfeed {
+	margin:	auto;
+	margin-top: 50px;
+	width: 400px;
+	
+	.back-button {
+		content: url("./../../../public/img/btn_back.svg");
+		background-size: contain;
+		height: 50px;
+		width: 50px;
+		color: @white;
+		background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	.back {
+		cursor: pointer;
+		font-family: 'bold';
+		margin: 10px;
+		text-align: start;
+	}
+	
+	.new-message-button {
+		content: url("./../../../public/img/btn_compose@2x.png");
+		position: fixed;
+    width: 75px;
+    bottom: 0px;
+    margin: auto;
+    cursor: pointer;
+    left: 48%;
+    
+    &:active {
+	    opacity: 0.5;
+    }
+	}
+	
+	
+	.message-box {
+		margin: auto;
+		background-color: @white;	
+		color: @black;
+		width: 400px;
+		border-radius:5px;
+		padding: 10px 10px 10px 15px;
+		margin-bottom: 20px;
+		box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+		.email {
+			font-family: 'regular';
+			font-size: 15px;
+			text-align: start;
+			color: @black;
+			cursor: pointer;
+		}
+		
+		.message {
+			font-family: 'bold';
+			font-size: 15px;
+			text-align: start;
+			color: @grey;
+		}
+	}
+}
+
+.newsfeed-modal {
+	background-color: transparent;
+	
+	
+	
+	.modal-content {
+		background-color: transparent;
+		box-shadow: none;
+		width: 400px;
+		border: 0px;
+		margin: auto;
+		
+		textarea {
+			resize: none;
+			font-family: 'regular';
+			font-size: 15px;
+			padding: 20px;
+		}
+		
+		.modal-footer {
+			border-top: 0px;
+			
+			button {
+			width: 100%;
+			background-color: @purple_1;
+			color: @white;
+			border: black 0px solid;
+			box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 15px;
+			font-family: 'bold';
+			font-size: 13px;
+			
+			
+		}
+		}
+	}
+}

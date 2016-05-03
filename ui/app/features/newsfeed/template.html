@@ -1,0 +1,34 @@
+<div class='center-align'>
+<div class="newsfeed">
+	
+	<div class="new-message-button" ng-click="vm.newMessage()" data-toggle="vm.modal" data-target="#myModal">
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<div class='back' ng-click= "vm.backButton()">Log Out</div>
+		</div>
+	</div>
+	
+	<script type="text/ng-template" id="myModalContent.html">
+      <div class="modal-body">
+         <textarea class="form-control" rows="10" id="comment" placeholder="What do you want to say?" ng-model="vm.data.newMessage"></textarea>
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" type="button" ng-click="vm.saveMessage()">POST</button>
+      </div>
+  </script>
+	
+	
+	
+	<div class="row" ng-repeat="message in vm.data.messages">
+		
+		<div class="message-box">
+		  <p class='email' ng-click="vm.openUser(message.userId)"> {{ message.email }}</p>
+		  <p class='message'> {{ message.message }}</p>
+		</div>
+	</div>
+		
+	
+</div>
+</div>

@@ -1,0 +1,65 @@
+@import '../../style/app';	//contains all the hex color codes, mixins, and page wide less code
+
+
+.login {
+	margin:	auto;
+	margin-top: 100px;
+	
+	.title {
+		padding: 10px 30px 10px 10px;
+		color: @white;
+		font-size: 40px;
+		font-family: 'bold';
+	}
+	
+	.subtitle {
+		font-size: 15px;
+		font-family: 'bold';
+	}
+	
+	.input {
+		margin-top: 30px;
+		
+		.input-group {
+			width: 300px;
+			margin: auto;
+			box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			
+			.top {
+				border-radius: 5px 5px 0px 0px;
+				border: black 1px solid;
+				border-bottom: @grey 0px solid;
+				font-family: 'regular';
+				font-size: 15px;
+				padding: 25px 25px 25px 25px;
+			}
+			
+			.bottom {
+				border-radius: 0px 0px 5px 5px;
+				border: black 1px solid;
+				border-top: @grey 0px solid;
+				font-family: 'regular';
+				font-size: 15px;
+				padding: 25px 25px 25px 25px;
+
+			}
+		}
+	}
+	
+	.submit-button {
+		margin-top: 30px;
+		
+		button {
+			width: 300px;
+			background-color: @purple_1;
+			color: @white;
+			border: black 0px solid;
+			box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 15px;
+			font-family: 'bold';
+			font-size: 13px;
+			
+			
+		}
+	}
+}

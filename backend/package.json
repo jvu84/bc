@@ -1,0 +1,17 @@
+{
+  "name": "BetterCompany_backend",
+  "version": "1.0.0",
+  "description": "nodejs backend for BetterCompany",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jonathan Vu",
+  "license": "",
+  "dependencies": {
+    "async": "",
+    "cluster": "",
+    "express": "4.x.x"
+  },
+  "devDependencies": {}
+}
